@@ -12,6 +12,7 @@ export default {
 
   async pokemonByType(type) {
     const pokemon = await api.get(`/pokemons?type=${type}`)
+
     return pokemon.data
   }
 };
